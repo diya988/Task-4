@@ -65,26 +65,29 @@ The application includes authentication and weather dashboard screens, city sear
 
 ##  Testing
 
-The project includes unit tests, repository integration tests, and Jetpack Compose UI tests.
+The project includes different levels of testing to verify application functionality and reliability.
 
-**Run local unit tests:**
+Unit Testing: Tests utility functions such as temperature conversion and weather condition descriptions.
 
-```bash
+Integration Testing: Uses MockWebServer to test weather repository responses and JSON parsing.
+
+UI Testing: Uses Jetpack Compose UI Testing to execute instrumented tests on an Android emulator.
+
+Manual Testing: Covers authentication, city search, weather information, forecasts, favourites, temperature conversion, themes, and notification permissions.
+
+Run Local Unit Tests
+
 ./gradlew test
-```
 
-**Run Android instrumented UI tests:**
+Run Android Instrumented UI Tests
 
-```bash
 ./gradlew connectedAndroidTest
-```
 
-On Windows, use:
+Windows users:
 
-```powershell
+Run these commands separately in the project terminal:
 .\gradlew.bat test
 .\gradlew.bat connectedAndroidTest
-```
 
 ##  Push Notifications
 
