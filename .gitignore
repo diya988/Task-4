@@ -16,3 +16,5 @@ local.properties
 # Firebase configuration
 app/google-services.json
 .idea/deploymentTargetSelector.xml
+# Generated release builds
+app/release/
